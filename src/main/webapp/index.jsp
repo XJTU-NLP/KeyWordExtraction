@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<canvas id="canvas"></canvas>
+<div class="header">
+    KeyWordExtraction
+</div>
 <div class="container">
     <form class="box" action="res.jsp" method="post">
         <textarea class="input" name="article" id="input" placeholder="请输入需要提取的文本"></textarea>
@@ -22,5 +26,6 @@
         <button class="button">保存</button>
     </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
