@@ -9,19 +9,18 @@
 <html>
 <head>
     <title>提取文章关键字保存到印象笔记中</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
-        <form action="res.jsp" method="post">
-            <textarea name="article" id="input" cols="30" rows="10" wrap="soft"></textarea>
-            <input type="submit" value="submit"/>
-        </form>
+<div class="container">
+    <form class="box" action="res.jsp" method="post">
+        <textarea class="input" name="article" id="input" placeholder="请输入需要提取的文本"></textarea>
+        <input class="button" type="submit" value="submit"/>
+    </form>
+    <div class="box">
+        <textarea class="input" name="keyWord" id="output" placeholder="提取的结果将在这里展示"></textarea>
+        <button class="button">保存</button>
     </div>
-    <div>
-        <textarea name="keyWord" id="output" cols="30" rows="10">
-        </textarea>
-        <button>保存</button>
-    </div>
-
+</div>
 </body>
 </html>
